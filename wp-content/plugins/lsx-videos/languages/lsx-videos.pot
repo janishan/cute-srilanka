@@ -1,0 +1,470 @@
+# Copyright (C) 2019 lsx-videos
+# This file is distributed under the same license as the lsx-videos package.
+msgid ""
+msgstr ""
+"Project-Id-Version: lsx-videos\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: LightSpeed <webmaster@lsdev.biz>\n"
+"Report-Msgid-Bugs-To: https://github.com/lightspeeddevelopment/lsx-videos/issues\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lsx-videos.php:32
+msgctxt "post type singular name"
+msgid "Video"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:58
+msgctxt "post type general name"
+msgid "Add New"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:59
+msgid "Add New"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:60
+msgid "Edit"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:61
+msgid "New"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:62, classes/class-lsx-videos-frontend.php:261
+msgid "All"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:63, classes/class-lsx-videos-admin.php:463
+msgid "View"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:64
+msgid "Search"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:65
+msgid "None found"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:66
+msgid "None found in Trash"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:102
+msgctxt "taxonomy general name"
+msgid "Video Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:103
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:104
+msgid "Search Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:105
+msgid "All Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:106
+msgid "Parent Category"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:107
+msgid "Parent Category:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:108
+msgid "Edit Category"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:109
+msgid "Update Category"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:110
+msgid "Add New Category"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:111
+msgid "New Category Name"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:112
+msgid "Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:137
+msgid "Featured:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:155
+msgid "Video source:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:158
+msgid "Allowed formats: MP4 (.mp4), WebM (.webm) and Ogg/Ogv (.ogg)."
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:172
+msgid "Youtube source:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:175
+msgid "It will replace the original video source on front-end."
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:178
+msgid "Giphy source:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:181
+msgid "The HTML will be stripped leaving only the URL."
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:186
+msgid "Video Details"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:193
+msgid "First Name:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:198
+msgid "Last Name:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:203
+msgid "Email Address:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:208
+msgid "Phone Number:"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:213
+msgid "Country of Residence"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:220
+msgid "Video Uploader Details"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:292, classes/class-lsx-videos-admin.php:293
+msgid "Theme Options"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:297
+msgid "Save Changes"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:318
+msgid "Display"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:330
+msgid "API"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:359
+msgid "Disable Excerpt"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:363
+msgid "Disable Excerpt."
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:376
+msgid "Placeholder"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:384
+msgid "Choose Image"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:385
+msgid "Delete"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:396
+msgid "Select featured image"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:409
+msgid "Enter video title"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:436
+msgid "Video Source"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:437
+msgid "Youtube Source"
+msgstr ""
+
+#: classes/class-lsx-videos-admin.php:452
+msgid "Download"
+msgstr ""
+
+#: classes/class-lsx-videos-frontend.php:169, classes/class-lsx-videos-widget-list.php:125, includes/settings/display.php:44
+msgid "Videos"
+msgstr ""
+
+#: classes/class-lsx-videos-frontend.php:174
+msgid "Videos Category"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:14
+msgid "LSX Videos - Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:113
+msgid "Video Categories"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:143, classes/class-lsx-videos-widget-list.php:159, classes/class-lsx-videos-widget-most-recent.php:115
+msgid "Title:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:147, classes/class-lsx-videos-widget-list.php:163, classes/class-lsx-videos-widget-most-recent.php:119
+msgid "Page Link:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:149, classes/class-lsx-videos-widget-list.php:165, classes/class-lsx-videos-widget-most-recent.php:121
+msgid "Link the widget to a page"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:152, classes/class-lsx-videos-widget-list.php:168, classes/class-lsx-videos-widget-most-recent.php:124
+msgid "Tagline:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:154, classes/class-lsx-videos-widget-list.php:170, classes/class-lsx-videos-widget-most-recent.php:126
+msgid "Tagline to display below the widget title"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:157, classes/class-lsx-videos-widget-list.php:173, classes/class-lsx-videos-widget-most-recent.php:129
+msgid "Button \"view all\" text:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:159, classes/class-lsx-videos-widget-list.php:175, classes/class-lsx-videos-widget-most-recent.php:131
+msgid "Leave empty to not display the button"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:162, classes/class-lsx-videos-widget-list.php:178
+msgid "Columns:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:174, classes/class-lsx-videos-widget-list.php:190
+msgid "Order By:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:178
+msgid "Admin (custom order)"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:179, classes/class-lsx-videos-widget-list.php:195
+msgid "ID"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:180, classes/class-lsx-videos-widget-list.php:196
+msgid "Name"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:181
+msgid "Slug"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:182
+msgid "Count"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:192, classes/class-lsx-videos-widget-list.php:210
+msgid "Order:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:196, classes/class-lsx-videos-widget-list.php:214
+msgid "Ascending"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:197, classes/class-lsx-videos-widget-list.php:215
+msgid "Descending"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:207, classes/class-lsx-videos-widget-list.php:225
+msgid "Maximum amount:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:209, classes/class-lsx-videos-widget-list.php:227
+msgid "Leave empty to display all"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:212
+msgid "Specify Video Categories by ID:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:214, classes/class-lsx-videos-widget-list.php:232
+msgid "Comma separated list, overrides limit and order settings"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:217, classes/class-lsx-videos-widget-list.php:254, classes/class-lsx-videos-widget-most-recent.php:138
+msgid "Display:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:221
+msgid "Description"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:222, classes/class-lsx-videos-widget-list.php:194, classes/class-lsx-videos-widget-list.php:245, classes/class-lsx-videos-widget-list.php:260, classes/class-lsx-videos-widget-most-recent.php:144
+msgid "None"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:232, classes/class-lsx-videos-widget-list.php:270, classes/class-lsx-videos-widget-most-recent.php:154
+msgid "Image size:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-categories.php:237, classes/class-lsx-videos-widget-list.php:275
+msgid "Carousel"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:14
+msgid "LSX Videos - List/Grid"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:197
+msgid "Date"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:198
+msgid "Modified Date"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:199
+msgid "Random"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:200
+msgid "Menu (WP dashboard order)"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:230
+msgid "Specify Videos by ID:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:235
+msgid "Category:"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:258, classes/class-lsx-videos-widget-most-recent.php:142
+msgid "Excerpt"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:259, classes/class-lsx-videos-widget-most-recent.php:143
+msgid "Full Content"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-list.php:279, classes/class-lsx-videos-widget-most-recent.php:159
+msgid "Featured posts"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-most-recent.php:14
+msgid "LSX Videos - Most Recent"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-most-recent.php:93
+msgid "Most Recent Video"
+msgstr ""
+
+#: classes/class-lsx-videos-widget-most-recent.php:134
+msgid "Specify Video by ID:"
+msgstr ""
+
+#: classes/class-lsx-videos.php:153, classes/class-lsx-videos.php:322, templates/content-archive-video.php:77
+msgid "View video"
+msgstr ""
+
+#. translators: 1: video views
+#. translators: 1: video views
+#. translators: 1: video views
+#: classes/class-lsx-videos.php:197, classes/class-lsx-videos.php:362, templates/content-archive-video.php:43
+msgid "%1$s views"
+msgstr ""
+
+#: classes/class-lsx-videos.php:199, classes/class-lsx-videos.php:364, templates/content-archive-video.php:45
+msgid "1 view"
+msgstr ""
+
+#. translators: 1: time ago (video published date)
+#. translators: 1: time ago (video published date)
+#. translators: 1: time ago (video published date)
+#: classes/class-lsx-videos.php:208, classes/class-lsx-videos.php:373, templates/content-archive-video.php:54
+msgid "%1$s ago"
+msgstr ""
+
+#: classes/class-lsx-videos.php:241, classes/class-lsx-videos.php:513
+msgid "Invalid number of columns set. LSX Videos supports 1 to 4 columns."
+msgstr ""
+
+#: classes/class-lsx-videos.php:461
+msgid "View more"
+msgstr ""
+
+#: includes/settings/api.php:3
+msgid "Settings"
+msgstr ""
+
+#: includes/settings/api.php:4
+msgid "License Keys"
+msgstr ""
+
+#: includes/settings/api.php:25
+msgid "Enter the license keys for your add-ons in the boxes below."
+msgstr ""
+
+#: includes/settings/api.php:30
+msgid "You have not installed any add-ons yet. View our list of add-ons"
+msgstr ""
+
+#: includes/settings/api.php:30
+msgid "here"
+msgstr ""
+
+#: includes/settings/display.php:4
+msgid "Placeholders"
+msgstr ""
+
+#: includes/settings/display.php:9
+msgid "Currencies"
+msgstr ""
+
+#: includes/settings/display.php:14
+msgid "Team"
+msgstr ""
+
+#: includes/settings/display.php:19
+msgid "Testimonials"
+msgstr ""
+
+#: includes/settings/display.php:24
+msgid "Projects"
+msgstr ""
+
+#: includes/settings/display.php:29
+msgid "Services"
+msgstr ""
+
+#: includes/settings/display.php:34
+msgid "Blog Customizer (posts widget)"
+msgstr ""
+
+#: includes/settings/display.php:39
+msgid "Sharing"
+msgstr ""

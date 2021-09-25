@@ -1,0 +1,118 @@
+@mixin customizer-search-body-colours(
+	$bg: #f6f6f6,
+	$breaker: #dadddf,
+	$color: #4a4a4a,
+	$link: #418ad0,
+	$hover: #f7ae00,
+	$small: #919191
+) {
+	.facetwp-filters-wrap {
+		@media (max-width: 767px) {
+			background-color: $bg;
+		}
+	}
+
+	.archive {
+		.facetwp-sidebar.widget-area {
+			.facetwp-type-slider {
+				.noUi-connect {
+					background: $link;
+				}
+			}
+		}
+	}
+
+	.facetwp-item {
+		.facetwp-collapsed {
+			button.facetwp-collapse {
+				&:before {
+					color: $link;
+				}
+				&:hover {
+					&:before {
+						color: $hover;
+					}
+				}
+			}
+		}
+	}
+
+	.facetwp-type-alpha {
+		.facetwp-alpha {
+			color: $breaker;
+
+			&.available {
+				color: $link;
+
+				&:hover {
+					color: $hover;
+				}
+			}
+		}
+	}
+
+	.facetwp-sort-select,
+	.facetwp-per-page-select {
+		background-image: url("data:image/svg+xml;utf8,<svg fill='#{$small}' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+		border-color: $breaker;
+		color: $small;
+		//background-color: white;
+		text-align-last: center;
+	}
+
+	.facetwp-template {
+		article.lsx-slot {
+			.lsx-label-post-type {
+				background-color: $color;
+				color: #fff;
+			}
+		}
+	}
+
+	.lsx-body-grid-layout.search {
+		.facetwp-template {
+			> .post-wrapper {
+				.lsx-slot {
+					.moretag {
+						background: $link;
+						&:hover {
+							background: $hover;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.facetwp-pager {
+		> .facetwp-page {
+			border-color: $link;
+			&.active,
+			&:hover {
+				background-color: $link;
+			}
+		}
+	}
+	.facetwp-type-pager {
+		button {
+			border-radius: 3px;
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 0.54px;
+			line-height: 1.25;
+			text-transform: uppercase;
+			padding: 12px 40px;
+			border: 2px solid $link;
+			background-color: transparent;
+			color: $link;
+			&:hover {
+				background-color: $link;
+				color: white;
+			}
+		}
+		.facetwp-per-page-select {
+			background-color: white;
+			border: 1px solid #ddd;
+		}
+	}
+}

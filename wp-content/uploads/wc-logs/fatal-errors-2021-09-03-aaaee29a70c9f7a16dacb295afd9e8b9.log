@@ -1,0 +1,12 @@
+2021-09-03T17:42:21+00:00 CRITICAL syntax error, unexpected '$options' (T_VARIABLE) in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\inc\options.php on line 1291
+
+2021-09-03T17:42:24+00:00 CRITICAL syntax error, unexpected '$options' (T_VARIABLE) in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\inc\options.php on line 1291
+
+2021-09-03T18:38:15+00:00 CRITICAL syntax error, unexpected '}' in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\destinationcontents\des-cities.php on line 32
+
+2021-09-03T18:42:06+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\destinationcontents\des-cities.php on line 27
+
+2021-09-03T18:42:16+00:00 CRITICAL syntax error, unexpected '<' in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\destinationcontents\des-cities.php on line 29
+
+2021-09-03T18:45:53+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\destinationcontents\des-cities.php on line 29
+

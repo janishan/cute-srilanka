@@ -1,0 +1,6 @@
+2021-08-26T16:25:40+00:00 CRITICAL syntax error, unexpected 'of_get_option' (T_STRING), expecting '(' in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\fpcontents\fp-infotabs.php on line 16
+
+2021-08-26T16:55:43+00:00 CRITICAL Can't use function return value in write context in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\fpcontents\fp-infotabs.php on line 16
+
+2021-08-26T16:55:52+00:00 CRITICAL Can't use function return value in write context in C:\wamp64\www\cute-srilanka\wp-content\themes\minimal-lsx\fpcontents\fp-infotabs.php on line 16
+

@@ -1,0 +1,54 @@
+//body { font-family: 'Helvetica Neue'; }
+
+/*h1, h2, h4, h5, h6,
+.h1, .h2, .h4, .h5, .h6 { font-family: 'yellowtailregular'; }
+
+h3, .h3 { font-family: 'yellowtailregular'; }*/
+
+h1{ 
+	font-family: 'yellowtailregular';
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 { 
+	font-family: 'EB Garamond', serif;
+	font-style: italic;
+}
+
+.content-area,
+.widget-area {
+	blockquote {
+		&:before { font-family: 'Helvetica Neue'; }
+	}
+}
+
+.btn { font-family: 'Helvetica Neue'; }
+
+.blog,
+.archive,
+.search.search-results {
+	article.post,
+	article.page {
+		.entry-title {
+			.label-sticky { font-family: 'Helvetica Neue'; }
+		}
+	}
+}
+
+#respond {
+	.comment-reply-title {
+		& > small { font-family: 'Helvetica Neue'; }
+	}
+}
+
+#comments {
+	.media-list {
+		.media {
+			.media-heading { font-family: 'Helvetica Neue'; }
+		}
+	}
+}
+
+.minimal-slider-slide-tagline {
+	font-family: 'Helvetica Neue';
+}
