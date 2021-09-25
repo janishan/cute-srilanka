@@ -48,9 +48,6 @@
             <p><?php echo of_get_option('des-box-intro-'.$desCityName, 'Lorem Ipsum'); ?></p>
             <p class="more-link grid-more-link"><a class="bttn primary-btn" href="<?php echo of_get_option('city-box-link-'.$desCityName, 'City'); ?>" tabindex="0">Learn more</a></p>
         </div>
-
-
-
 <?php } ?>
 
     </div>
