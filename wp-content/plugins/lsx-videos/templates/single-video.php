@@ -13,7 +13,7 @@ global $lsx_videos_frontend
 
 <?php lsx_content_wrap_before(); ?>
 
-<div id="primary" class="content-area <?php echo esc_attr( lsx_main_class() ); ?>">
+<div id="primary">
 
 	<?php lsx_content_before(); ?>
 

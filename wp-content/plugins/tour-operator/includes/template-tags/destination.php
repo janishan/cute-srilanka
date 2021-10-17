@@ -22,7 +22,7 @@ function lsx_to_destination_posts() {
 		'from'      => 'post',
 		'to'        => 'destination',
 		'column'    => '3',
-		'before'    => '<section id="posts" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-posts' ) . '>' . esc_html__( 'Featured Posts', 'tour-operator' ) . '</h2><div id="collapse-posts" class="collapse in"><div class="collapse-inner">',
+		'before'    => '<section id="posts" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title">' . esc_html__( 'Featured Posts', 'tour-operator' ) . '</h2><div id="collapse-posts" class="collapse in"><div class="collapse-inner">',
 		'after'     => '</div></div></section>',
 	);
 
@@ -135,7 +135,7 @@ function lsx_to_country_regions( $args = array() ) {
 
 		if ( $regions->have_posts() ) : ?>
 			<section id="regions" class="lsx-to-section <?php lsx_to_collapsible_class( 'destination', false ); ?>">
-				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" <?php lsx_to_collapsible_attributes_not_post( 'collapse-regions' ); ?>><?php echo esc_html( $settings['title'] ); ?>
+				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ><?php echo esc_html( $settings['title'] ); ?>
                                                                                                                                <?php 
                 if ( false !== $settings['tagline'] ) {
 echo '<small>' . wp_kses_post( $settings['tagline'] ) . '</small>'; } 
@@ -206,7 +206,7 @@ function lsx_to_destination_tours() {
 			'from'      => 'tour',
 			'to'        => 'destination',
 			'column'    => '3',
-			'before'    => '<section id="tours" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-tours' ) . '>' . lsx_to_get_post_type_section_title( 'tour', '', esc_html__( 'Featured Tours', 'tour-operator' ) ) . '</h2><div id="collapse-tours" class="collapse in"><div class="collapse-inner">',
+			'before'    => '<section id="tours" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title">' . lsx_to_get_post_type_section_title( 'tour', '', esc_html__( 'Featured Tours', 'tour-operator' ) ) . '</h2><div id="collapse-tours" class="collapse in"><div class="collapse-inner">',
 			'after'     => '</div></div></section>',
 		);
 
@@ -230,7 +230,7 @@ function lsx_to_destination_activities() {
 			'to'            => 'destination',
 			// 'content_part'	=>	'widget-activity',
 			'column'        => '3',
-			'before'        => '<section id="activities" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-activities' ) . '>' . lsx_to_get_post_type_section_title( 'activity', '', esc_html__( 'Featured Activities', 'tour-operator' ) ) . '</h2><div id="collapse-activities" class="collapse in"><div class="collapse-inner">',
+			'before'        => '<section id="activities" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title">' . lsx_to_get_post_type_section_title( 'activity', '', esc_html__( 'Featured Activities', 'tour-operator' ) ) . '</h2><div id="collapse-activities" class="collapse in"><div class="collapse-inner">',
 			'after'         => '</div></div></section>',
 		);
 
@@ -276,7 +276,7 @@ function lsx_to_destination_travel_info() {
 		);
 		?>
 		<section id="travel-info" class="lsx-to-section <?php lsx_to_collapsible_class( 'destination', false ); ?>">
-			<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" <?php lsx_to_collapsible_attributes_not_post( 'collapse-travel-info' ); ?>><?php esc_html_e( 'Travel Information', 'tour-operator' ); ?></h2>
+			<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title"><?php esc_html_e( 'Travel Information', 'tour-operator' ); ?></h2>
 
 			<div id="collapse-travel-info" class="collapse in">
 				<div class="collapse-inner">

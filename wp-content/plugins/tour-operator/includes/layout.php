@@ -290,7 +290,7 @@ function lsx_to_accommodation_single_content_bottom() {
 		if ( function_exists( 'lsx_to_has_map' ) && lsx_to_has_map() ) { 
         ?>
 			<section id="accommodation-map" class="lsx-to-section <?php lsx_to_collapsible_class( 'accommodation', false ); ?>">
-				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title hidden-lg" <?php lsx_to_collapsible_attributes_not_post( 'collapse-accommodation-map' ); ?>><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
+				<h2 class="lsx-to-section-title lsx-to-collapse-title"><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
 
 				<div id="collapse-accommodation-map" class="collapse in">
 					<div class="collapse-inner">
@@ -303,16 +303,16 @@ function lsx_to_accommodation_single_content_bottom() {
 
 		lsx_to_accommodation_units();
 
-		lsx_to_accommodation_facilities( '<section id="facilities" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-facilities' ) . '>' . esc_html__( 'Facilities', 'tour-operator' ) . '</h2><div id="collapse-facilities" class="collapse in"><div class="collapse-inner"><div class="row facilities-wrapper">', '</div></div></div></section>' );
+		lsx_to_accommodation_facilities( '<section id="facilities" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Facilities', 'tour-operator' ) . '</h2><div id="collapse-facilities" class="collapse in"><div class="collapse-inner"><div class="row facilities-wrapper">', '</div></div></div></section>' );
 
 		lsx_to_included_block();
 
-		lsx_to_gallery( '<section id="gallery" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-gallery' ) . '>' . esc_html__( 'Gallery', 'tour-operator' ) . '</h2><div id="collapse-gallery" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+		lsx_to_gallery( '<section id="gallery" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Gallery', 'tour-operator' ) . '</h2><div id="collapse-gallery" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 
 		if ( function_exists( 'lsx_to_videos' ) ) {
-			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		} elseif ( class_exists( 'Envira_Videos' ) ) {
-			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		}
 
 		if ( function_exists( 'lsx_to_accommodation_specials' ) ) {
@@ -323,12 +323,12 @@ function lsx_to_accommodation_single_content_bottom() {
 			lsx_to_accommodation_reviews();
 		}
 
-		lsx_to_related_items( 'travel-style', '<section id="related-items" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-related-items' ) . '>' . lsx_to_get_post_type_section_title( 'accommodation', 'similar', 'Related Accommodation' ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+		lsx_to_related_items( 'travel-style', '<section id="related-items" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . lsx_to_get_post_type_section_title( 'accommodation', 'similar', 'Related Accommodation' ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 
 		$connected_tours = get_post_meta( get_the_ID(), 'tour_to_accommodation', false );
 
 		if ( lsx_to_accommodation_display_connected_tours() && post_type_exists( 'tour' ) && is_array( $connected_tours ) && ! empty( $connected_tours ) ) {
-			lsx_to_related_items( $connected_tours, '<section id="tours" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-related-items' ) . '>' . esc_html__( 'Related Tours', 'tour-operator' ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>', true, 'tour' );
+			lsx_to_related_items( $connected_tours, '<section id="tours" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Related Tours', 'tour-operator' ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>', true, 'tour' );
 		}
 
 		lsx_to_accommodation_posts();
@@ -398,7 +398,7 @@ function lsx_to_destination_single_content_bottom() {
 		if ( function_exists( 'lsx_to_has_map' ) && lsx_to_has_map() ) { 
         ?>
 			<section id="destination-map" class="lsx-to-section <?php lsx_to_collapsible_class( 'destination', false ); ?>">
-				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title hidden-lg" <?php lsx_to_collapsible_attributes_not_post( 'collapse-destination-map' ); ?>><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
+				<h2 class="lsx-to-section-title lsx-to-collapse-title"><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
 
 				<div id="collapse-destination-map" class="collapse in">
 					<div class="collapse-inner">
@@ -422,9 +422,9 @@ function lsx_to_destination_single_content_bottom() {
 		lsx_to_gallery( '<div class="details-gallery-wrapper"><div class="bigger-heading-wrapper"><h2 class="list-heading big-heading">The Wonderland</h2></div><div class="details-gallery-title-wrapper section-title-wrapper"><h2 class="details-gallery-title section-title">Gallery</h2></div>', '</div>' );
 
 		if ( function_exists( 'lsx_to_videos' ) ) {
-			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		} elseif ( class_exists( 'Envira_Videos' ) ) {
-			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		}
 
 		lsx_to_destination_tours();
@@ -531,7 +531,7 @@ function lsx_to_destination_archive_content_bottom() {
         ?>
 			<section id="destination-map" class="lsx-to-section <?php lsx_to_collapsible_class( 'destination', false ); ?>">
 				<?php if ( ! lsx_to_has_destination_banner_map() ) : ?>
-					<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title hidden-lg" <?php lsx_to_collapsible_attributes( 'collapse-destination-map' ); ?>><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
+					<h2 class="lsx-to-section-title lsx-to-collapse-title"><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
 				<?php endif ?>
 
 				<div id="collapse-destination-map" class="collapse in">
@@ -557,7 +557,7 @@ function lsx_to_tour_single_content_bottom() {
 		if ( function_exists( 'lsx_to_has_map' ) && lsx_to_has_map() ) { 
         ?>
 			<section id="tour-map" class="lsx-to-section <?php lsx_to_collapsible_class( 'tour', false ); ?>">
-				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title hidden-lg" <?php lsx_to_collapsible_attributes_not_post( 'collapse-tour-map' ); ?>><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
+				<h2 class="lsx-to-section-title lsx-to-collapse-title"><?php esc_html_e( 'Map', 'tour-operator' ); ?></h2>
 
 				<div id="collapse-tour-map" class="collapse in">
 					<div class="collapse-inner">
@@ -568,13 +568,13 @@ function lsx_to_tour_single_content_bottom() {
 		<?php 
         }
 
-		lsx_to_best_time_to_visit( '<section id="when-to-go" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-when-to-go' ) . '>' . esc_html__( 'When to Go', 'tour-operator' ) . '</h2><div id="collapse-when-to-go" class="collapse in"><div class="collapse-inner clearfix">', '</div></div></section>' );
+		lsx_to_best_time_to_visit( '<section id="when-to-go" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'When to Go', 'tour-operator' ) . '</h2><div id="collapse-when-to-go" class="collapse in"><div class="collapse-inner clearfix">', '</div></div></section>' );
 
 		if ( lsx_to_has_itinerary() ) {
 			$itinerary_count = 1;
 			?>
 			<section id="itinerary" class="lsx-to-section <?php lsx_to_collapsible_class( 'tour', false ); ?>">
-				<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-itinerary" aria-expanded="false"><?php esc_html_e( 'Full Day by Day Itinerary', 'tour-operator' ); ?></h2>
+				<h2 class="lsx-to-section-title lsx-to-collapse-title" data-target="#collapse-itinerary" aria-expanded="false"><?php esc_html_e( 'Full Day by Day Itinerary', 'tour-operator' ); ?></h2>
 
 				<div id="collapse-itinerary" class="collapse in">
 					<div class="collapse-inner">
@@ -632,12 +632,12 @@ function lsx_to_tour_single_content_bottom() {
 
 		lsx_to_included_block();
 
-		lsx_to_gallery( '<section id="gallery" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-gallery' ) . '>' . esc_html__( 'Gallery', 'tour-operator' ) . '</h2><div id="collapse-gallery" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+		lsx_to_gallery( '<section id="gallery" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Gallery', 'tour-operator' ) . '</h2><div id="collapse-gallery" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 
 		if ( function_exists( 'lsx_to_videos' ) ) {
-			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		} elseif ( class_exists( 'Envira_Videos' ) ) {
-			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-videos' ) . '>' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+			lsx_to_envira_videos( '<section id="videos" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . esc_html__( 'Videos', 'tour-operator' ) . '</h2><div id="collapse-videos" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 		}
 
 		if ( function_exists( 'lsx_to_tour_specials' ) ) {
@@ -648,7 +648,7 @@ function lsx_to_tour_single_content_bottom() {
 			lsx_to_tour_reviews();
 		}
 
-		lsx_to_related_items( 'travel-style', '<section id="related-items" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" ' . lsx_to_collapsible_attributes( 'collapse-related-items' ) . '>' . lsx_to_get_post_type_section_title( 'tour', 'related', esc_html__( 'Related Tours', 'tour-operator' ) ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
+		lsx_to_related_items( 'travel-style', '<section id="related-items" class="lsx-to-section ' . lsx_to_collapsible_class() . '"><h2 class="lsx-to-section-title lsx-to-collapse-title">' . lsx_to_get_post_type_section_title( 'tour', 'related', esc_html__( 'Related Tours', 'tour-operator' ) ) . '</h2><div id="collapse-related-items" class="collapse in"><div class="collapse-inner">', '</div></div></section>' );
 
 		lsx_to_tour_posts();
 	}

@@ -43,7 +43,7 @@ class WC_Twenty_Fourteen {
 	 * Open wrappers.
 	 */
 	public static function output_content_wrapper() {
-		echo '<div id="primary" class="content-area"><div id="content" role="main" class="site-content twentyfourteen"><div class="tfwc">';
+		echo '<div id="primary"><div id="content" role="main" class="site-content twentyfourteen"><div class="tfwc">';
 	}
 
 	/**

@@ -22,17 +22,18 @@ if ( 1 !== $lsx_to_archive ) {
 
 		<div <?php lsx_to_entry_class( 'entry-content' ); ?>>
 			<div class="lsx-to-summary">
-				<h2 class="lsx-to-summary-title"><?php the_title(); ?></h2>
+				<h1 class="lsx-to-summary-title"><?php the_title(); ?></h1>
 			</div>
-
-			<?php lsx_to_price( '<p class="lsx-to-meta-data lsx-to-meta-data-big lsx-to-meta-data-price"><span class="lsx-to-meta-data-key">' . esc_html__( 'From price', 'tour-operator' ) . ':</span> ', '</p>' ); ?>
-			<?php the_content(); ?>
-			<?php lsx_to_sharing(); ?>
+			<div class="entry-content">
+				<?php lsx_to_price( '<p class="lsx-to-meta-data lsx-to-meta-data-big lsx-to-meta-data-price"><span class="lsx-to-meta-data-key">' . esc_html__( 'From price', 'tour-operator' ) . ':</span> ', '</p>' ); ?>
+				<?php the_content(); ?>
+				<?php lsx_to_sharing(); ?>
+			</div>
 		</div>
 
 	<?php } elseif ( is_search() || empty( tour_operator()->options[ get_post_type() ]['disable_entry_text'] ) ) { ?>
 
-		<div <?php lsx_to_entry_class( 'entry-content' ); ?>>
+		<div class="entry-content">
                                        <?php
 			lsx_to_entry_content_top();
 			the_excerpt();

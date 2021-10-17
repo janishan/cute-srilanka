@@ -21,7 +21,7 @@ if ( ! function_exists( 'lsx_to_review_posts' ) ) {
 			'from'		=> 'post',
 			'to'		=> 'review',
 			'column'	=> '3',
-			'before'	=> '<section id="posts" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-posts">' . esc_html__( 'Featured Posts', 'to-reviews' ) . '</h2><div id="collapse-posts" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="posts" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-posts">' . esc_html__( 'Featured Posts', 'to-reviews' ) . '</h2><div id="collapse-posts" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -106,7 +106,7 @@ function lsx_to_review_accommodation() {
 			'from'		=> 'accommodation',
 			'to'		=> 'review',
 			'column'	=> '3',
-			'before'	=> '<section id="accommodation" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-accommodation">' . __( lsx_to_get_post_type_section_title( 'accommodation', '', 'Featured Accommodations' ), 'to-reviews' ) . '</h2><div id="collapse-accommodation" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="accommodation" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-accommodation">' . __( lsx_to_get_post_type_section_title( 'accommodation', '', 'Featured Accommodations' ), 'to-reviews' ) . '</h2><div id="collapse-accommodation" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -129,7 +129,7 @@ function lsx_to_review_tour() {
 			'from'		=> 'tour',
 			'to'		=> 'review',
 			'column'	=> '3',
-			'before'	=> '<section id="tours" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-tours">' . __( lsx_to_get_post_type_section_title( 'tour', '', 'Featured Tours' ), 'to-reviews' ) . '</h2><div id="collapse-tours" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="tours" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-tours">' . __( lsx_to_get_post_type_section_title( 'tour', '', 'Featured Tours' ), 'to-reviews' ) . '</h2><div id="collapse-tours" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -152,7 +152,7 @@ function lsx_to_review_destination() {
 			'from'		=> 'destination',
 			'to'		=> 'review',
 			'column'	=> '3',
-			'before'	=> '<section id="destinations" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-destinations">' . __( lsx_to_get_post_type_section_title( 'destination', '', 'Featured Destinations' ), 'to-reviews' ) . '</h2><div id="collapse-destinations" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="destinations" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-destinations">' . __( lsx_to_get_post_type_section_title( 'destination', '', 'Featured Destinations' ), 'to-reviews' ) . '</h2><div id="collapse-destinations" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -175,7 +175,7 @@ function lsx_to_accommodation_reviews() {
 			'from'		=> 'review',
 			'to'		=> 'accommodation',
 			'column'	=> '2',
-			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -198,7 +198,7 @@ function lsx_to_tour_reviews() {
 			'from'		=> 'review',
 			'to'		=> 'tour',
 			'column'	=> '2',
-			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 
@@ -221,7 +221,7 @@ function lsx_to_destination_reviews() {
 			'from'		=> 'review',
 			'to'		=> 'destination',
 			'column'	=> '2',
-			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-toggle="collapse" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
+			'before'	=> '<section id="review" class="lsx-to-section lsx-to-collapse-section"><h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title" data-target="#collapse-review">' . __( lsx_to_get_post_type_section_title( 'review', '', 'Reviews' ), 'to-reviews' ) . '</h2><div id="collapse-review" class="collapse in"><div class="collapse-inner">',
 			'after'		=> '</div></div></section>',
 		);
 

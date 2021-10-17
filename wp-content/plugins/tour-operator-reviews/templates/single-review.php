@@ -10,7 +10,7 @@ get_header(); ?>
 
 	<?php lsx_content_wrap_before(); ?>
 
-	<div id="primary" class="content-area col-sm-12 <?php echo esc_attr( lsx_main_class() ); ?>">
+	<div id="primary">
 
 		<?php lsx_content_before(); ?>
 
@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<section id="summary" class="lsx-to-section lsx-to-collapse-section">
-					<h2 class="lsx-to-section-title lsx-to-collapse-title lsx-title hidden-lg" data-toggle="collapse" data-target="#collapse-summary"><?php esc_html_e( 'Summary', 'to-reviews' ); ?></h2>
+					<h2 class="lsx-to-section-title lsx-to-collapse-title" data-target="#collapse-summary"><?php esc_html_e( 'Summary', 'to-reviews' ); ?></h2>
 
 					<div id="collapse-summary" class="collapse in">
 						<div class="collapse-inner">

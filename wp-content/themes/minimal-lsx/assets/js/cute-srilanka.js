@@ -178,7 +178,10 @@
 
                 acEls.eq(0).find('.accordion-heading-wrapper').trigger('click');
             }
-        
+            
+            if($('#collapse-gallery .gallery').length > 0){
+                $('#collapse-gallery .gallery').find('> br').remove();
+            }
 
             // search
 
