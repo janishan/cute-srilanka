@@ -3,12 +3,14 @@
 $currTitle = esc_attr( $post->post_name );
 
 $cats = explode(',',of_get_option('attractions-categories', '4'));
-$attractPoints = explode(',',of_get_option('attractions-points', 'attract-point'));
+
+$attractPoints = explode(',',of_get_option('attractions-points-'.$currTitle, 'attract-point'));
     
 ?>
 
 
 <div class="details-accordion-wrapper">
+    <?=$currTitle;?>
 			<div class="full-width-image-wrapper">
                 <img src="<?=get_template_directory_uri() . '/assets/images/destinations/full-width-'.$currTitle.'.jpg';?>" alt="">
 			</div>
@@ -22,13 +24,13 @@ $attractPoints = explode(',',of_get_option('attractions-points', 'attract-point'
 
                         foreach ($attractPoints as $attractionPoint) {
                             $tempAttractionPoint = str_replace(' ', '-', strtolower($attractionPoint));
-                            $tempPointCat = of_get_option($tempAttractionPoint.'-attraction-category', 'Cat');
+                            $tempPointCat = of_get_option($tempAttractionPoint.'-attraction-category-'.$currTitle, 'Cat');
                             $tempPointCat = str_replace(' ', '-', strtolower($tempPointCat));
 
-                            $tempPointCity = of_get_option($tempAttractionPoint.'-attraction-city', 'City');
-                            $tempPointCity = str_replace(' ', '-', strtolower($tempPointCity));
+                            //$tempPointCity = of_get_option($tempAttractionPoint.'-attraction-city', 'City');
+                            //$tempPointCity = str_replace(' ', '-', strtolower($tempPointCity));
 
-                            if($tempPointCity == $currTitle && $tempPointCat == $cat){
+                            if($tempPointCat == $cat){
                                
                                 $hasItems = true;
                             }
@@ -52,25 +54,29 @@ $attractPoints = explode(',',of_get_option('attractions-points', 'attract-point'
                                         $pointName = $attractionPoint;
                                         $attractionPoint = str_replace(' ', '-', strtolower($attractionPoint));
 
-                                        $pointTitle = of_get_option($attractionPoint.'-attraction', 'Name');
-                                        $pointIntro = of_get_option($attractionPoint.'-attraction-intro', 'Intro');
-                                        $pointTel = of_get_option($attractionPoint.'-attraction-tel', 'TEl');
-                                        $pointLink = of_get_option($attractionPoint.'-attraction-view-link', 'View Link');
-                                        $pointImage = of_get_option($attractionPoint.'-attraction-image', 'Image');
-                                        $pointCat = of_get_option($attractionPoint.'-attraction-category', 'Cat');
+                                        $pointTitle = of_get_option($attractionPoint.'-attraction-'.$currTitle, 'Name');
+                                        $pointIntro = of_get_option($attractionPoint.'-attraction-intro-'.$currTitle, 'Intro');
+                                        $pointTel = of_get_option($attractionPoint.'-attraction-tel-'.$currTitle, 'TEl');
+                                        $pointLink = of_get_option($attractionPoint.'-attraction-view-link-'.$currTitle, 'View Link');
+                                        $pointImage = of_get_option($attractionPoint.'-attraction-image-'.$currTitle, 'Image');
+                                        $pointCat = of_get_option($attractionPoint.'-attraction-category-'.$currTitle, 'Cat');
                                         $pointCat = str_replace(' ', '-', strtolower($pointCat));
 
-                                        $pointCity = of_get_option($attractionPoint.'-attraction-city', 'City');
-                                        $pointCity = str_replace(' ', '-', strtolower($pointCity));
+                                        //$pointCity = of_get_option($attractionPoint.'-attraction-city', 'City');
+                                        //$pointCity = str_replace(' ', '-', strtolower($pointCity));
 
-                                        if($pointCity != $currTitle){
+                                       /* if($pointCity != $currTitle){
                                             continue;
                                         }else if($pointCat != $cat){
+                                            continue;
+                                        }*/
+
+                                        if($pointCat != $cat){
                                             continue;
                                         }
                                 ?>
 
-                                    <div class="accordion-grid-item" data-cat="<?php echo $pointCat; ?>" data-city="<?php echo $pointCity; ?>">
+                                    <div class="accordion-grid-item" data-cat="<?php echo $pointCat; ?>" data-city="<?php echo $currTitle; ?>">
                                         <div class="accordion-grid-item-image-wrapper">
                                             <div class="accordion-grid-item-image">
                                                 <img src="<?=$pointImage;?>" alt="">

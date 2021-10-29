@@ -69,7 +69,9 @@
 #optionsframework-wrap h2 .nav-tab{padding:10px;font-size:17px;color:#555555;font-weight:500}
 #optionsframework-wrap h2 .nav-tab:hover,#optionsframework-wrap h2 .nav-tab-active{background:#0CB9E4;color:#FFFFFF;text-shadow:none}
 #optionsframework-wrap h2 .nav-tab-active:after{border:11px solid transparent;content:" ";height:0;pointer-events:none;position:absolute;width:0;border-right-color:#F5F5F5;margin:2px -20px 0 0;margin-top:2px;right:0}
-#optionsframework .sub-item{border-bottom:3px solid #0EC2EA}
+#optionsframework .sub-item{text-align:center;display:block;width:100%;border:none;background-color:#360eea;text-shadow:none;color:#fff;padding:10px}
+#optionsframework .sub-item.second-sub-item{border-bottom:3px solid #0EC2EA;border-top:3px solid #0EC2EA;padding: 10px;display:block;width:100%;text-align:center;background-color:transparent;color:#0EC2EA}
+#optionsframework .second-sub-item-seperator{border-bottom:3px solid #0e41ea;padding: 1px;display:block;width:100%}
 #optionsframework .featured-area-sub-title{background:#555555;color:#EEEEEE;display:block;font-size:20px;font-weight:bold;padding:10px;text-align:center;width:97%; margin-top: 30px; }
 #optionsframework-wrap .nav-tab{margin:0}
 #optionsframework-wrap form{margin:-20px 0 0}

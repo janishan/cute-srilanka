@@ -1250,6 +1250,37 @@ $options[] = array(
 		'std' => get_template_directory_uri() . 'assets/images/main-content-image.png',
 		'type' => 'upload');
 
+
+	// Destination Details Attractions (accordions)
+
+	$options[] = array(
+		'name' => 'Attraction Categories',
+		'type' => 'heading');
+	
+	$options[] = array(
+		'name' => 'Attraction Category Names', 
+		'desc' => 'Set the Attraction Category Names', 
+		'id' => 'attractions-categories',
+		'std' => 'cat1,cat2,',
+		'type' => 'text');
+
+	
+	$attractCats = explode(',',of_get_option('attractions-categories', 'cat1,cat2'));
+	
+	foreach ($attractCats as $attractCat) {
+		$catName = $attractCat;
+		$attractCat = str_replace(' ', '-', strtolower($attractCat));
+		
+		
+		$options[] = array(
+			'name' => $catName.' Icon', 
+			'desc' => 'Set the'.$catName.' Icon', 
+			'id' => $attractCat.'-icon',
+			'std' => get_template_directory_uri() . '/assets/images/destinations/'.$attractCat.'.png',
+			'type' => 'upload');
+
+	}
+
 	
 	// Destination Page
 
@@ -1377,34 +1408,119 @@ $options[] = array(
 				$disCity = str_replace(' ', '-', strtolower($disCity));
 
 				$tempcitiesArray[$disCity] = $cityName;
-			$options[] = array(
-				'name' => 'City Box Title - '.$disCity, 
-				'desc' => 'Set the City Box Title - '.$disCity, 
-				'id' => 'city-box-title-'.$disCity,
-				'std' => $cityName,
-				'type' => 'text');
+				$options[] = array(
+					'desc' => '<span class="featured-area-title sub-item">City - '.$disCity.'</span>', 
+					'type' => 'info');
+
+				$options[] = array(
+					'name' => 'City Box Title - '.$disCity, 
+					'desc' => 'Set the City Box Title - '.$disCity, 
+					'id' => 'city-box-title-'.$disCity,
+					'std' => $cityName,
+					'type' => 'text');
+				
+				$options[] = array(
+					'name' => 'City Box Intro - '.$disCity, 
+					'desc' => 'Set the City  Box Intro - '.$disCity, 
+					'id' => 'city-box-intro-'.$disCity,
+					'std' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada aliquet sapien quis porta.',
+					'type' => 'text');
+				
+				$options[] = array(
+					'name' => 'City Box Image - '.$disCity,
+					'desc' => 'Set the City Box Image - '.$disCity,
+					'id' => 'city-box-image-'.$disCity,
+					'std' => get_template_directory_uri() . '/assets/images/districts/cities/'.$disCity.'.jpg',
+					'type' => 'upload');
 			
-			$options[] = array(
-				'name' => 'City Box Intro - '.$disCity, 
-				'desc' => 'Set the City  Box Intro - '.$disCity, 
-				'id' => 'city-box-intro-'.$disCity,
-				'std' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada aliquet sapien quis porta.',
-				'type' => 'text');
-			
-			$options[] = array(
-				'name' => 'City Box Image - '.$disCity,
-				'desc' => 'Set the City Box Image - '.$disCity,
-				'id' => 'city-box-image-'.$disCity,
-				'std' => get_template_directory_uri() . '/assets/images/districts/cities/'.$disCity.'.jpg',
-				'type' => 'upload');
+				$options[] = array(
+					'name' => 'City Box Link - '.$disCity, 
+					'desc' => 'Set the City Box Link - '.$disCity, 
+					'id' => 'city-box-link-'.$disCity,
+					'std' => '/destinations/'.$disCity,
+					'type' => 'text',
+					'class'	=> 'mini' );
+				
+				$options[] = array(
+					'desc' => '<span class="featured-area-title sub-item second-sub-item">Attraction Points - '.$disCity.'</span>', 
+					'type' => 'info');
+
+				$options[] = array(
+					'name' => 'Attraction Points - '.$disCity, 
+					'desc' => 'Set the Attraction Points '.$disCity, 
+					'id' => 'attractions-points-'.$disCity,
+					'std' => $disCity.'-point1,'.$disCity.'-point2',
+					'type' => 'text');
+
+				$options[] = array(
+					'desc' => '<span class="second-sub-item-seperator"></span>', 
+					'type' => 'info');
+
+					$attractPoints = explode(',',of_get_option('attractions-points-'.$disCity, $disCity.'-point1,'.$disCity.'-point2'));
 		
-			$options[] = array(
-				'name' => 'City Box Link - '.$disCity, 
-				'desc' => 'Set the City Box Link - '.$disCity, 
-				'id' => 'city-box-link-'.$disCity,
-				'std' => '/destinations/'.$disCity,
-				'type' => 'text',
-				'class'	=> 'mini' );
+					foreach ($attractPoints as $attractPoint) {
+						$pointName = $attractPoint;
+						$attractPoint = str_replace(' ', '-', strtolower($attractPoint));
+						
+						$options[] = array(
+							'name' => $pointName, 
+							'desc' => 'Set the '.$pointName, 
+							'id' => $attractPoint.'-attraction-'.$disCity,
+							'std' => $pointName,
+							'type' => 'text');
+			
+						$catArray = array();
+						$catArray['default'] = 'Select Category';
+						
+						foreach ($attractCats as $attractCat) {
+							$catName = $attractCat;
+							$attractCat = str_replace(' ', '-', strtolower($attractCat));
+							$catArray[$attractCat] = $catName;
+						}
+
+						$options[] = array(
+							'name' => $pointName.' Category', 
+							'desc' => 'Set the '.$pointName.' Category', 
+							'id' => $attractPoint.'-attraction-category-'.$disCity,
+							'std' => 'category',
+							'type' => 'select',
+							'options' => $catArray
+							);
+
+						$options[] = array(
+							'name' => $pointName.' Intro', 
+							'desc' => 'Set the '.$pointName.' Intro', 
+							'id' => $attractPoint.'-attraction-intro-'.$disCity,
+							'std' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada aliquet sapien quis porta. Nullam consectetur mattis ultrices.',
+							'type' => 'text');
+						
+						$options[] = array(
+							'name' => $pointName.' Telephone', 
+							'desc' => 'Set the '.$pointName.' Telephone', 
+							'id' => $attractPoint.'-attraction-tel-'.$disCity,
+							'std' => '0112546789',
+							'type' => 'text');
+			
+						$options[] = array(
+							'name' => $pointName.' View Link', 
+							'desc' => 'Set the '.$pointName.' View Link', 
+							'id' => $attractPoint.'-attraction-view-link-'.$disCity,
+							'std' => '/destinations/'.$attractPoint,
+							'type' => 'text',
+							'class'	=> 'mini' );
+			
+						$options[] = array(
+							'name' => $pointName.' Image', 
+							'desc' => 'Set the '.$pointName.' Image', 
+							'id' => $attractPoint.'-attraction-image-'.$disCity,
+							'std' => get_template_directory_uri() . '/assets/images/destinations/'.$attractPoint.'.jpg',
+							'type' => 'upload');
+
+						$options[] = array(
+							'desc' => '<span class="second-sub-item-seperator"></span>', 
+							'type' => 'info');
+			
+					}
 		
 			}
 
@@ -1412,38 +1528,10 @@ $options[] = array(
 
 
 
-	// Destination Details Attractions (accordions)
-
-	$options[] = array(
-		'name' => 'Attraction Categories',
-		'type' => 'heading');
-	
-	$options[] = array(
-		'name' => 'Attraction Category Names', 
-		'desc' => 'Set the Attraction Category Names', 
-		'id' => 'attractions-categories',
-		'std' => 'cat1,cat2,',
-		'type' => 'text');
+	//***********************************
 
 	
-		$attractCats = explode(',',of_get_option('attractions-categories', 'cat1,cat2'));
-		
-		foreach ($attractCats as $attractCat) {
-			$catName = $attractCat;
-			$attractCat = str_replace(' ', '-', strtolower($attractCat));
-			
-			
-			$options[] = array(
-				'name' => $catName.' Icon', 
-				'desc' => 'Set the'.$catName.' Icon', 
-				'id' => $attractCat.'-icon',
-				'std' => get_template_directory_uri() . '/assets/images/destinations/'.$attractCat.'.png',
-				'type' => 'upload');
-
-		}
-
-	
-	$options[] = array(
+	/*$options[] = array(
 		'name' => 'Attraction Points',
 		'type' => 'heading');
 	
@@ -1525,7 +1613,7 @@ $options[] = array(
 				'std' => get_template_directory_uri() . '/assets/images/destinations/'.$attractPoint.'.jpg',
 				'type' => 'upload');
 
-		}
+		}*/
 
 
 	return $options;
